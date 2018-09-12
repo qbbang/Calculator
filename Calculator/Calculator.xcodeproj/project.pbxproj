@@ -54,14 +54,22 @@
 		E82784DA214263B90075CEED /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				E82784DB214263B90075CEED /* AppDelegate.swift */,
+				E82800A82148CFAA0081BAB4 /* Supporting Files */,
 				E82784DD214263B90075CEED /* ViewController.swift */,
 				E82784DF214263B90075CEED /* Main.storyboard */,
+			);
+			path = Calculator;
+			sourceTree = "<group>";
+		};
+		E82800A82148CFAA0081BAB4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E82784DB214263B90075CEED /* AppDelegate.swift */,
 				E82784E2214263BB0075CEED /* Assets.xcassets */,
 				E82784E4214263BB0075CEED /* LaunchScreen.storyboard */,
 				E82784E7214263BB0075CEED /* Info.plist */,
 			);
-			path = Calculator;
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,7 +290,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = Calculator/Info.plist;
+				INFOPLIST_FILE = "Calculator/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +308,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = Calculator/Info.plist;
+				INFOPLIST_FILE = "Calculator/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

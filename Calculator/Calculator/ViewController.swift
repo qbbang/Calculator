@@ -10,33 +10,33 @@ import UIKit
 import Foundation
 
 class ViewController: UIViewController {
-
+    
     /* ViewController Lifecycle의 일부분,  계산기 작성 시 사용되지 않음!v */
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     @IBOutlet weak var display: UILabel!
     
-    var userIsInTheMiddleOfTyping = false'
+    var userIsInTheMiddleOfTyping = false
     
     @IBAction func touchDigit(_ sender: UIButton) {
         let digit = sender.currentTitle!
         
         /* 불필요한 코드
-        // C의 문법
-        //print("touched %s digit", digit)
-        // Swift의 방식
-        print("touched \(digit) digit")
-        
-        // textCurrentlyInDisplay를 생성하고 display에 text를 전달하고자 함
-        // display.text는 불가함
-        // display!.text를 통해 강제로 가져옴*/
+         // C의 문법
+         //print("touched %s digit", digit)
+         // Swift의 방식
+         print("touched \(digit) digit")
+         
+         // textCurrentlyInDisplay를 생성하고 display에 text를 전달하고자 함
+         // display.text는 불가함
+         // display!.text를 통해 강제로 가져옴*/
         if userIsInTheMiddleOfTyping {
             let textCurrentlyInDisplay = display.text!
             
@@ -78,14 +78,12 @@ class ViewController: UIViewController {
                 displayValue = Double.pi;
                 
                 /* displayValue 계산 프로퍼티에 의해 사용하지 않음, 대체됨
-                //initializer String(M_PI)
-                //M_PI Double값으로부터 String 생성
-               display.text = String(Double.pi) //M_PI
-                */
+                 //initializer String(M_PI)
+                 //M_PI Double값으로부터 String 생성
+                 display.text = String(Double.pi) //M_PI
+                 */
             }
-        } else if mathematicalSymbol == "√" {
-            displayValue = sqrt(displayValue)
-        }
+        } 
     }
     
 }
